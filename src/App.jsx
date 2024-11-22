@@ -1,6 +1,13 @@
+import { useEffect } from 'react';
 import './App.css';
+import initSMARTApp from './smart';
+import './redirect';
 
 function App() {
+  useEffect(() => {
+    initSMARTApp();
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
